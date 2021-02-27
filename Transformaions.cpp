@@ -24,6 +24,7 @@ cout<<"\n1.translation\n2.rotation\n3.scaling\n4.shearing\n5.reflection\n6.exit"
 cin>>op;
 switch(op)
 {
+    //TRANSLATION
 case 1:
 cout<<"enter the translation vector";
 cin>>tx>>ty;
@@ -47,6 +48,7 @@ line(xa1[i],ya1[i],xa1[(i+1)%n],ya1[(i+1)%n]);
 getch();
 cleardevice();
 break;
+    //ROTATION
 case 2:
 cout<<"enter the rotation angle";
 cin>>theta;
@@ -72,6 +74,7 @@ line(xa1[i],ya1[i],xa1[(i+1)%n],ya1[(i+1)%n]);
 getch();
 cleardevice();
 break;
+    //SCALING
 case 3:
 cout<<"enter the scaling factor";
 cin>>sx>>sy;
@@ -97,6 +100,7 @@ line(xa1[i],ya1[i],xa1[(i+1)%n],ya1[(i+1)%n]);
 getch();
 cleardevice();
 break;
+    //SHEARING
 case 4:
 cout<<"enter the shear value";
 cin>>shx>>shy;
@@ -126,6 +130,7 @@ line(xa1[i],ya1[i],xa1[(i+1)%n],ya1[(i+1)%n]);
 getch();
 cleardevice();
 break;
+    //REFLECTION
 case 5:
 cout<<"before reflection";
 for(i=0;i<n;i++)
