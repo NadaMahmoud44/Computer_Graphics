@@ -11,6 +11,7 @@ void main()
 
     initgraph(&gDriver,&gMode,"c:\\tc\\bgi");
     cleardevice();
+    //Getting x,y values from the user
     cout<<endl<<"Enter x1  : ";
     cin>>x1;
     cout<<"Enter y1  : ";
@@ -28,7 +29,7 @@ void main()
     DDALine(320+x1,240-y1,320+x2,240-y2,iColor%16);
     getch();
 }
-
+//DDA Algorithm Implementation 
 void DDALine(int x1,int y1,int x2,int y2,int iColor)
 {
     float dX,dY,iSteps;
